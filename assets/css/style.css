@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('../fonts/static/Inter-SemiBold.ttf');
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--Grey900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    background-color: var(--Grey800);
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--White);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.profile-social-media-handles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-social-media-handles>button {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Grey700);
+    font-size: 12px;
+    font-family: 'Inter-SemiBold';
+    color: var(--White);
+}
+
+.profile-info {
+    padding: 1rem;
+    font-size: 12px;
+    font-family: 'Inter-Regular';
+
+}
+
+.profile-address {
+    font-style: normal;
+    font-size: 12px;
+    font-family: 'Inter-SemiBold';
+    color: var(--Green);
+    padding: 0.375rem;
+}
+
+.profile-name {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'Inter-SemiBold';
+}
+
+.profile-social-media-handles>button:hover, .profile-social-media-handles>button:focus {
+    background-color: var(--Green);
+    color: var(--Grey900);
+    cursor: url('../images/icons8-hand-cursor-30.png'), pointer;
+    caret-color: var(--Grey900);
+}
